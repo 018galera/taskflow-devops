@@ -16,10 +16,17 @@ const db = new sqlite3.Database(absolutePath, (err) => {
 });
 
 db.serialize(() => {
+  // Recriando a tabela com suporte a Subtarefas (JSON) e Imagem Base64
   db.run(`
     CREATE TABLE IF NOT EXISTS tasks (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       title TEXT NOT NULL,
+      description TEXT,
+      category TEXT DEFAULT 'Geral',
+      priority TEXT DEFAULT 'Média',
+      image_url TEXT,
+      due_date DATE,
+      subtasks TEXT DEFAULT '[]',
       done INTEGER DEFAULT 0,
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
       completed_at DATETIME

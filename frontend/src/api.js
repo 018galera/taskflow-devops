@@ -1,5 +1,4 @@
-const API_URL = 'http://localhost:3001';
-
+const API_URL = import.meta.env.VITE_API_URL || 'https://taskflow-backend-tejo.onrender.com';
 export async function listTasks() {
   const res = await fetch(`${API_URL}/api/tasks`);
   return res.json();

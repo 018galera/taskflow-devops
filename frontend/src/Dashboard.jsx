@@ -55,8 +55,8 @@ export default function Dashboard({ tasks, themeColor }) {
                     <stop offset="95%" stopColor={mainColor} stopOpacity={0}/>
                   </linearGradient>
                 </defs>
-                <XAxis dataKey="name" stroke="#a1a1aa" tick={{ fill: '#a1a1aa', fontSize: 12 }} axisLine={false} tickLine={false} dy={10} />
-                <YAxis stroke="#a1a1aa" tick={{ fill: '#a1a1aa', fontSize: 12 }} axisLine={false} tickLine={false} />
+                <XAxis dataKey="name" stroke="#0505b6" tick={{ fill: '#0404e3', fontSize: 12 }} axisLine={false} tickLine={false} dy={10} />
+                <YAxis stroke="#1818c7" tick={{ fill: '#0f0fcd', fontSize: 12 }} axisLine={false} tickLine={false} />
                 <Tooltip contentStyle={{ backgroundColor: '#18181b', borderColor: '#27272a', borderRadius: '12px' }} itemStyle={{ color: mainColor }} />
                 <Area type="monotone" dataKey="tarefas" stroke={mainColor} strokeWidth={3} fillOpacity={1} fill="url(#colorGrad)" />
               </AreaChart>

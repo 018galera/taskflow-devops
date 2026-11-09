@@ -127,7 +127,7 @@ export default function App() {
       <main className="main-content" style={{ zIndex: 10 }}>
         <header className="topbar">
           <div>
-<h1>{activeTab === 'dashboard' ? 'Painel de Controle Enterprise' : activeTab === 'board' ? 'Quadro Kanban' : 'Configurações'}</h1>            <p style={{ color: '#a1a1aa', fontSize: '15px', marginTop: '4px' }}>Gestão de produtividade e infraestrutura.</p>
+<h1>{activeTab === 'dashboard' ? 'Painel de Controle Enterpr' : activeTab === 'board' ? 'Quadro Kanban' : 'Configurações'}</h1>            <p style={{ color: '#a1a1aa', fontSize: '15px', marginTop: '4px' }}>Gestão de produtividade e infraestrutura.</p>
           </div>
           <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
             <div className="search-container">
